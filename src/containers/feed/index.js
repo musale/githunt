@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 import Alert from '../../components/alert';
 import Loader from '../../components/loader';
-import TopNav from '../../components/top-nav';
+// import TopNav from '../../components/top-nav';
 import Filters from '../../components/filters';
 import GroupHeading from '../../components/group-heading';
 import { fetchTrending } from '../../redux/github/actions';
@@ -151,8 +151,8 @@ class FeedContainer extends React.Component {
 
   render() {
     return (
-      <div className="page-wrap">
-        <TopNav/>
+      <div className="page-wrap pt-4">
+        {/* <TopNav/> */}
 
         { this.renderAlerts() }
 
